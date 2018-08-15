@@ -50,7 +50,7 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>u_created_by,closed_by</recipient_fields>
+        <recipient_fields>sys_created_by,u_created_by,assigned_to</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
@@ -65,7 +65,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>86801b7713339740cb1eb3776144b079</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Facilities completion</sys_name>
         <sys_overrides/>
         <sys_package display_value="Facilities Managment" source="x_exte_facilities">5410e96b13735740cb1eb3776144b0dd</sys_package>
@@ -74,7 +74,7 @@
         <sys_scope display_value="Facilities Managment">5410e96b13735740cb1eb3776144b0dd</sys_scope>
         <sys_update_name>sysevent_email_action_86801b7713339740cb1eb3776144b079</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-08-15 15:13:30</sys_updated_on>
+        <sys_updated_on>2018-08-15 16:00:17</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
