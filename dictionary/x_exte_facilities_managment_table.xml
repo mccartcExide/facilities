@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Facilities Managment Table" max_length="40" name="x_exte_facilities_managment_table" type="collection">
+        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Closed" max_length="40" name="closed" read_only="true" type="glide_date_time"/>
+        <element label="Closed by" max_length="32" name="closed_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Closure notes" max_length="4000" name="closure_notes" type="string"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element default="Milton" label="Facility" max_length="150" name="facility" read_only="true" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Short description" max_length="150" name="short_description" type="string"/>
+        <element choice="3" default="1" label="State" mandatory="true" max_length="40" name="state" type="integer">
+            <choice>
+                <element label="Open" sequence="0" value="1"/>
+                <element label="Pending Caller" sequence="1" value="10"/>
+                <element label="Pending Vendor" sequence="2" value="5"/>
+                <element label="Complete" sequence="3" value="20"/>
+            </choice>
+        </element>
+        <element label="Created By" max_length="32" name="u_created_by" read_only="true" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index2">
+            <element name="u_created_by"/>
+        </index>
+        <index name="index3">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index4">
+            <element name="closed_by"/>
+        </index>
+    </element>
+</database>
